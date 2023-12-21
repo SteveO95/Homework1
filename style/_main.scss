@@ -1,0 +1,98 @@
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+// .top {
+//   height: 1024px;
+//   padding-top: 217px;
+//   /* background-image:url(/img/fonts_1.jpg);
+//       background-repeat: no-repeat;
+//       background-size: cover; */
+//   background: url(/img/fonts_1.jpg) no-repeat center/cover;
+//   /*  lightgray 50% / cover no-repeat */
+// }
+
+.header {
+  padding-top: 217px;
+  padding-bottom: 493px;
+  background: url(/img/fonts_1.jpg) no-repeat center/cover;
+
+
+
+
+
+
+
+
+  &__title {
+    font: 700 64px "Montserrat", sans-serif;
+    max-width: 789px;
+    margin-bottom: 32px;
+  }
+  &__text {
+    margin-top: 32px;
+    /* margin: 32px 838px 0 120px; */
+    $color-text: #fff;
+    font: 300 18px "Montserrat";
+    line-height: 32px;
+    margin-bottom: 44px;
+    max-width: 481px;
+  }
+  &__text-bold{
+    $color-text: #FFF;
+    font: 700 18px "Montserrat";
+    line-height: 32px;
+}
+  &__btn {
+    margin-top: 44px;
+  }
+}
+/* Карточки игр  ARTICLE */
+.article {
+  height: 1221px;
+  background: #000915;
+}
+
+  .container {
+    column-gap: 32px;
+    display: flex;
+    padding-top: 128px;
+  
+  &__box-game {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    width: 378px;
+    height: 300px;
+    border-radius: 16px;
+  }
+  &__box-game:hover {
+    outline: 3px solid #44d2ff;
+    
+  }
+
+  &__box-game-text{
+    $color-text: #fff;
+    font: 600 24px/32px "Montserrat";
+    padding-top: 236px;
+    padding-bottom: 32px;
+    padding-left: 32px;
+    box-sizing: border-box;
+  }
+
+  .game-1 {
+    background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),
+      url(/img/svg/game-1.svg), lightgray 50% / cover no-repeat;
+  }
+  .game-2 {
+    background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),
+      url(/img/svg/game-2.svg), lightgray 50% / cover no-repeat;
+  }
+  .game-3 {
+    background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),
+      url(/img/svg/game-3.svg), lightgray 50% / cover no-repeat;
+  }
+  }
+  
