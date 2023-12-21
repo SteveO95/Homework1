@@ -69,9 +69,9 @@ let user = {
 //Задание 9.1
 user['city of residence'] = 'Vladivostok - St. Petersburg';
 //Задание 9.2
-user.age = 28,1;
+user.age = 28.1;
 //Задание 9.3
-delete user['city of residence'];
+delete user['cityOfResidence'];
 //Задание 9.4
 let info = (prompt("Какую информацию хотите узнать о пользователе?"));
 alert(user[info]);
