@@ -68,8 +68,12 @@ a {
 
 /* Карточки игр  ARTICLE */
 .article {
-  height: 1221px;
-  background: #000915;
+  background-color: #000915;
+  padding-top: 128px;
+  padding-bottom: 128px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .container {
@@ -108,6 +112,27 @@ a {
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(/img/svg/game-3.svg), lightgray 50%/cover no-repeat;
 }
 
+.game {
+  background-color: #000915;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.game__info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-top: 282px;
+  padding-bottom: 282px;
+  max-width: 600px;
+}
+.game__text {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+}
+
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
@@ -140,15 +165,33 @@ a {
     font-size: 14px;
     line-height: 22px;
   }
-  .article {
-    height: 1221px;
-  }
   .container {
     flex-direction: column;
     gap: 32px;
   }
   .container__box-game {
     width: 343px;
+  }
+  .game {
+    flex-direction: column;
+    gap: 64px;
+  }
+  .game__info {
+    padding-top: 51px;
+    padding-bottom: 0;
+    align-items: center;
+  }
+  .game__text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    color: #fff;
+    text-align: center;
+  }
+  .game__img {
+    width: 344px;
+    height: 236px;
+    padding-bottom: 85px;
   }
 }
 /* font-family: 'Montserrat', sans-serif; *//*# sourceMappingURL=style.css.map */

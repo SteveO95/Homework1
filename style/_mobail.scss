@@ -1,66 +1,73 @@
 @media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 
-    .center {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-    
-    .header{
-        padding: 0;
-     
-        height: 735px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-       
-        &__title {
-            font-size: 32px;
-            text-align: center;
-            
-        }
-    
-        &__text {
-            font-size: 14px;
-            font-weight: 300;
-            line-height: 22px;
-            $color-text: #fff;
-            margin-bottom: 32px;
-            max-width: 343px;
-            text-align: center;
-        }
-        &__text-bold{
-            
-            font: 700 14px/22px "Montserrat";
-            $color-text: #fff;
-          ;
-        }
+  .header {
+    padding: 0;
 
-        &__btn{
-            font-size: 14px;
-            line-height: 22px;
-            $color-text: #fff;
-      }
-    }
-    .article{
-        height: 1221px;
-    }
-    .container{
-        flex-direction: column;
-        gap: 32px;
+    height: 735px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-        &__box-game{
-            width: 343px;
-        }
-
-        
+    &__title {
+      font-size: 32px;
+      text-align: center;
     }
 
+    &__text {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 22px;
+      $color-text: #fff;
+      margin-bottom: 32px;
+      max-width: 343px;
+      text-align: center;
+    }
+    &__text-bold {
+      font: 700 14px/22px "Montserrat";
+      $color-text: #fff;
+    }
 
+    &__btn {
+      font-size: 14px;
+      line-height: 22px;
+      $color-text: #fff;
+    }
+  }
 
+  .container {
+    flex-direction: column;
+    gap: 32px;
 
+    &__box-game {
+      width: 343px;
+    }
+  }
 
+  .game {
+    flex-direction: column;
+    gap: 64px;
 
-}  
-
-
+    &__info {
+      padding-top: 51px;
+      padding-bottom: 0;
+      align-items: center;
+    }
+    &__text {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 22px;
+      color: #fff;
+      text-align: center;
+    }
+    &__img {
+      width: 344px;
+      height: 236px;
+      padding-bottom: 85px;
+    }
+  }
+}
