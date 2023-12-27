@@ -61,25 +61,28 @@
 // alert(age);
 
 //Задание 9.0
-let user = {
-    name :  'Sergey Semin',
-    age : 28,
-    isAdmin : true
-};
-//Задание 9.1
-user['city of residence'] = 'Vladivostok - St. Petersburg';
-//Задание 9.2
-user.age = 28.1;
-//Задание 9.3
-delete user['cityOfResidence'];
-//Задание 9.4
-let info = (prompt("Какую информацию хотите узнать о пользователе?"));
-alert(user[info]);
+// let user = {
+//     name :  'Sergey Semin',
+//     age : 28,
+//     isAdmin : true
+// };
+// //Задание 9.1
+// user['city of residence'] = 'Vladivostok - St. Petersburg';
+// //Задание 9.2
+// user.age = 28.1;
+// //Задание 9.3
+// delete user['cityOfResidence'];
+// //Задание 9.4
+// let info = (prompt("Какую информацию хотите узнать о пользователе?"));
+// alert(user[info]);
 
-// Задание 10
-let greetings = ['Привет', 'Категорически приветствую тебя', 'Здравствуй', 'Салам', 'Hello'];
-let randomGreeting = greetings[Math.floor(Math.random() * greetings.length)];
+// // Задание 10
+// let greetings = ['Привет', 'Категорически приветствую тебя', 'Здравствуй', 'Салам', 'Hello'];
+// let randomGreeting = greetings[Math.floor(Math.random() * greetings.length)];
 
-let userName = prompt('Как вас зовут?');
-alert(`${randomGreeting}, ${userName}!`);
-//Сильно будете казнить если я вместо обыного приветствия (нашёл решение для случайного рандомного приветствия?)
+// let userName = prompt('Как вас зовут?');
+// alert(`${randomGreeting}, ${userName}!`);
+
+// //Сильно будете казнить если я вместо обыного приветствия (нашёл решение для случайного рандомного приветствия?)
+
+
