@@ -16,7 +16,7 @@ a {
   text-decoration: none;
 }
 
-.btn-outlined {
+.btn_outlined {
   display: block;
   border: none;
   color: inherit;
@@ -31,7 +31,7 @@ a {
   font: 400 normal 18px/normal sans-serif;
 }
 
-.btn-outlined:hover {
+.btn_outlined:hover {
   background-color: #eb443f;
 }
 
@@ -58,7 +58,7 @@ a {
   margin-bottom: 44px;
   max-width: 481px;
 }
-.header__text-bold {
+.header__text_bold {
   font: 700 18px "Montserrat";
   line-height: 32px;
 }

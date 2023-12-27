@@ -35,35 +35,39 @@ console.log(+a + +b);
 
 //Задание 5
 
-let mounthNumber = prompt('Введи любой номер месяца в году');
+let monthNumber = 12;
 
-if(mounthNumber <= 12) {
-    switch (mounthNumber) {
-        case '1':
-        case '2':
-        case '12':
-            console.log('зима');
-            break;
-        case '3':
-        case '4':
-        case '5':
-            console.log('весна');
-            break;
-    
-        case '6':
-        case '7':
-        case '8':
-            console.log('лето');
-            break;
-    
-        case '9':
-        case '10':
-        case '11':
-            console.log('осень');
-            break;
-        default:
-            break;
-    }
+if (monthNumber < 1 || monthNumber > 12) {
+  console.log("Ошибка: Некорректный номер месяца.");
+} else {
+  let season;
+
+  switch (monthNumber) {
+    case 1:
+    case 2:
+    case 12:
+      season = "зима";
+      break;
+    case 3:
+    case 4:
+    case 5:
+      season = "весна";
+      break;
+    case 6:
+    case 7:
+    case 8:
+      season = "лето";
+      break;
+    case 9:
+    case 10:
+    case 11:
+      season = "осень";
+      break;
+    default:
+      season = "невозможно определить";
+  }
+
+  console.log(`Месяц номер ${monthNumber} принадлежит к сезону ${season}.`);
 }
 
 
@@ -71,45 +75,48 @@ if(mounthNumber <= 12) {
 
 // Задание 7
 
-let num = +prompt('Пожалуйста, введите любое число');
+let userInput = prompt("Пожалуйста, введите любое число");
+let number = parseFloat(userInput);
 
-if(isNaN(num)) {
-    console.log('число');
+if (!isNaN(number)) {
+  if (number % 2 === 0) {
+    alert("Число четное");
+  } else {
+    alert("Число нечетное");
+  }
 } else {
-    if(num % 2 === 0 ) {
-        console.log('Число четное');
-    } else {
-        console.log('Число нечетное');
-    }
+  alert("Ошибка: Введенное значение не является числом.");
 }
 
 
 //Задание 8
-let clientPhone = +prompt('Введите цифру 1 если андроид, введите цифру 0 если ios');
-let clientOS = 0;
+let clientOS = prompt("Введите 0, если вы используете iOS, или 1, если вы используете Android:");
 
-if(clientOS === clientPhone) {
-    console.log('Установите версию приложения для iOS по ссылке')
+if (clientOS === "0") {
+  console.log("Установите версию приложения для iOS по ссылке");
+} else if (clientOS === "1") {
+  console.log("Установите версию приложения для Android по ссылке");
 } else {
-    console.log('Установите версию приложения для Android по ссылке');
+  console.log("Некорректный ввод. Введите 0 для iOS или 1 для Android.");
 }
 
 
 //Задание 9
-let clientIOS = 0;
-let clientAndroid = 1;
-let clientDeviceYear = 2015;
+let clientOC = prompt("Введите 0, если вы используете iOS, или 1, если вы используете Android:");
+let clientDeviceYear = prompt("Введите год производства вашего телефона:");
 
-let client = +prompt('Введите цифру 1 если андроид, введите цифру 0 если ios');
-let year = +prompt('Укажите год выпуска телефона');
-
-
-if ((client === clientIOS && year >= clientDeviceYear) || (client === clientAndroid && year >= clientDeviceYear)) {
-    console.log('Установите приложение по ссылке');
-} else if (client === clientIOS && year < clientDeviceYear ) {
-    console.log('Установите облегченную версию приложения для iOS по ссылке');
-} else if (client === clientAndroid && year < clientDeviceYear) {
-    console.log('Установите облегченную версию приложения для Android по ссылке');
+if (clientOC === "0") {
+  if (clientDeviceYear >= 2015) {
+    console.log("Установите версию приложения для iOS по ссылке");
+  } else {
+    console.log("Установите облегченную версию приложения для iOS по ссылке");
+  }
+} else if (clientOC === "1") {
+  if (clientDeviceYear >= 2015) {
+    console.log("Установите версию приложения для Android по ссылке");
+  } else {
+    console.log("Установите облегченную версию приложения для Android по ссылке");
+  }
 } else {
-    console.log('Введите корректные данные');
+  console.log("Некорректный ввод. Введите 0 для iOS или 1 для Android.");
 }
