@@ -44,21 +44,16 @@ for (let n = 1000; n > 50; n/=2) {
 
 // Задание 6
 
-let friday = 0;
 
-for ( let i = 1; i <= 31; i++) {
-    if(friday === 0) {
-        let isFriday = confirm('сегодня пятница?');
-        if (i === 7 && isFriday === false) {
-            console.log('Вы с другой планеты');
-            break;
-        }
+let firstFriday = 0;
+
+for (let i = 1; i <= 31; i++) {
+    if (firstFriday === 0) {
+        let isFriday = confirm(`Сегодня ${i}-е число. Это пятница?`);
         if (isFriday) {
-            friday = i;
+            firstFriday = i;
         }
-    }
-    if (friday !== 0 && ((i - friday) % 7 === 0)) {
+    } else if ((i - firstFriday) % 7 === 0) {
         console.log(`Сегодня пятница, ${i}-е число. Необходимо подготовить отчет.`);
     }
-
 }
