@@ -133,6 +133,42 @@ a {
   line-height: 32px;
 }
 
+.riddles__info {
+  max-width: 1200px;
+}
+
+.game__fonts {
+  background: linear-gradient(180deg, #000915 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), lightgray 50%/contain no-repeat, #000915;
+  background-image: url(/img/fonts_2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+  text-align: center;
+}
+
+.footer {
+  height: 80px;
+  background-color: #000915;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
@@ -195,6 +231,21 @@ a {
   }
   .flex-reverse {
     flex-direction: column-reverse;
+  }
+  .background {
+    height: 800px;
+  }
+  .justify-center {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 374px) {
+  .product-box .product__img {
+    max-width: 300px;
+  }
+  .game__img {
+    width: 300px;
+    height: 200px;
   }
 }
 /* font-family: 'Montserrat', sans-serif; *//*# sourceMappingURL=style.css.map */
