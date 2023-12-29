@@ -12,7 +12,7 @@
         <h1 class="header__title">Добро пожаловать на мой сайт!</h1>
         <p class="header__text">
           Вам предстоит пройти несколько увлекательных 
-          игр. Если готов нажимай <span class="header__text_bold">поехали </span>   и <span class="header__text-bold"> приступай</span> 
+          игр. Если готов нажимай <span class="header__text_bold">поехали </span>   и <span class="header__text_bold"> приступай</span> 
         </p>
         <button type="submit" class="header__btn btn_outlined">Поехали!</button>
 
@@ -44,16 +44,42 @@
               времени года
               он относится.</p>
           <form action="#">
-              <button class="btn_outlined">Играть!</button>
+              <button class="btn_outlined"  onclick="startGameMonths();">Играть!</button>
           </form>
       </div>
       <img class="game__img" src="./img/svg/game_img.svg">
   </section>
 
+  <section class="game center flex-reverse">
+    <img class="game__img" src="./img/svg/game_svg-2.svg" alt="gameWords">
+    <div class="game__info">
+        <h2 class="game__title">Запомни слова</h2>
+        <p class="game__text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо
+            запомнить.</p>
+        <form action="#">
+            <button class="btn_outlined">Играть!</button>
+        </form>
+    </div>
+</section>
+
+<section class="game center game__fonts justify-center" >
+  <div class="game__info align-center riddles__info">
+      <h2 class="game__title">Игра в загадки</h2>
+      <p class="game__text align-center">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не правильный
+          ответ, то компьютер даст вам подсказку. У вас будет три попытки и две подсказки.</p>
+      <form action="#">
+          <button class="btn_outlined">Играть!</button>
+      </form>
+  </div>
+</section>
+<footer class="footer">
+  <p class="footer__text">Все права защищены</p>
+</footer>
 
 
 
 
-    <script src="./hw-js/hv-2.js" ></script>
+
+    <script src="./hw-js/hv-4.js" ></script>
   </body>
 </html>
