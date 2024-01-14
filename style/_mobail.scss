@@ -70,4 +70,33 @@
       padding-bottom: 85px;
     }
   }
+  .flex-reverse {
+    flex-direction: column-reverse;
+  }
+  .background {
+    height: 800px;
+  }
+
+  .justify-center {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 374px) {
+
+  .product-box {
+
+      .product {
+
+          &__img {
+              max-width: 300px;
+          }
+      }
+  }
+
+  .game {
+      &__img {
+          width: 300px;
+          height: 200px;
+      }
+  }
 }
