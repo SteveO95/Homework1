@@ -51,6 +51,11 @@
   .game {
     flex-direction: column;
     gap: 64px;
+    
+    &__title {
+      font-size: 32px;
+      text-align: center;
+    }
 
     &__info {
       padding-top: 51px;
