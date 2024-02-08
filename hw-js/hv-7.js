@@ -19,6 +19,7 @@
 function  isPositive(num) {
     return num > 0;
     
+    
 }
 function isMale(person) {
     return person.gender === 'male';
@@ -29,7 +30,7 @@ function filter(array, ruleFunction) {
     for (let item of array) {
         if (ruleFunction(item)){
             result.push(item);
-        }
+        } 
         
         
     }
